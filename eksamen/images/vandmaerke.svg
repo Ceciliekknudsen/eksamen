@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_2" data-name="Lag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.38 57.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b3b3b3;
+        font-family: ArialMT, Arial;
+        font-size: 6.81px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #ccc;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Lag_4" data-name="Lag 4">
+    <path class="cls-2" d="m21.69,15.61h10.66S32.89.5,16.7.5c-21.67,0-21.53,44.91,0,44.91,16.2,0,15.65-15.11,15.65-15.11h-10.66s0,6.02-4.24,6.13c-9.57.24-9.57-27.71-.68-27.9,4.92-.11,4.92,7.08,4.92,7.08Z"/>
+    <text class="cls-1" transform="translate(2.38 55.29)"><tspan x="0" y="0">© 2023 CKDESIGN</tspan></text>
+    <polygon class="cls-2" points="34.68 15.61 48.48 .5 60.38 .5 40.69 22.69 60.38 45.41 48.35 45.41 34.68 30.3 34.68 15.61"/>
+  </g>
+</svg>
