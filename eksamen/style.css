@@ -114,7 +114,9 @@ header .menuikon .navikon::after{ background-color: rgb(46, 46, 46);
 
 
 /* INDHOLD PÅ SIDERNE */
-        /* INDEX */
+
+
+/* INDEX */
 body{ margin: 0%;
         width: 100%;
 }
@@ -140,7 +142,7 @@ main {margin-top:150px;}
         text-align: right;
 }
 
-        /* INDEX BUND */
+/* INDEX BUND */
 .bunden { margin-top: 60px;}
 .indexkontakt {display: flex; 
         flex-wrap: wrap; 
@@ -161,7 +163,7 @@ main {margin-top:150px;}
         margin: 40px;
 }
 
-        /* INDEX ANIMATION */
+/* INDEX ANIMATION */
 #phone {font-size:50px; 
         color: rgb(255, 137, 0);
         animation: tele 2s infinite
@@ -191,7 +193,9 @@ main {margin-top:150px;}
         100%{transform: rotate(0deg)}   
 }
         
-        /* SE KNAPPER LÆNGERE NEDE */
+       
+/* SE KNAPPER LÆNGERE NEDE */
+
 
 /* PORTFOLIO */
 .topportfolio {display:flex; 
@@ -242,14 +246,15 @@ main {margin-top:150px;}
 
 
 
+
 /* OM MIG SIDE*/
 .ommig {display: flex; 
-        flex-wrap: wrap; 
+        flex-wrap: nowrap; 
         justify-content: flex-end; 
         align-items: center;
 }
 
-#navnebillede {width: 80%;}
+#navnebillede {width: 80%; max-width: 650px;}
 #mig, #navn {display: none;}
 
 .ommigbund { display: flex; 
@@ -267,6 +272,8 @@ main {margin-top:150px;}
 section { padding: 40px 0px;}
 
 p b { color: rgb(226, 26, 188);}
+
+
 
 
 /* KONTAKT MIG */
@@ -334,8 +341,9 @@ select { width: 300px;
 }
 
 
-/* FOOTER */
 
+
+/* FOOTER */
 footer {
         width: 100%; 
         border-top: 1px solid rgb(46, 46, 46); 
@@ -354,6 +362,8 @@ footer p {display: none;}
 i { font-size:23px; 
         color: rgb(226, 26, 188) 
 }
+
+
 
 
 /* KNAPPER */
@@ -402,6 +412,8 @@ i { font-size:23px;
         background-color: rgb(255, 137, 0);
         color: white;
 }
+
+
 
 
 
@@ -457,20 +469,14 @@ i { font-size:23px;
 }
 
 /* OM MIG */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1322px) {
         #navnebillede {display: none}
         #mig {display: block; 
                 width: 600px;}
-}
-
-/* SPECIEL MEDIA TIL OM MIG, 
-PGA BILLEDE */
-
-@media only screen and (min-width: 1322px) {
         #navn {display: block; 
                 max-height: 100px; 
                 margin-left: 60px;}
-        .ommig {justify-content: space-between;}
+        .ommig {justify-content: space-between; }
 }
 
 /*KONTAKT*/
