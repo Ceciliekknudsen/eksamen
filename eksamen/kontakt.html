@@ -1,77 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="da">
     <head>
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-        <script src="https://kit.fontawesome.com/cb1ce48900.js" crossorigin="anonymous"></script>>
+        <script src="https://kit.fontawesome.com/cb1ce48900.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <title> Kontakt </title>
     </head>
+   
     <body>
         <header>
             <a href="index.html"><img src="images/lillelogo.png" alt="Blåt C og K" id="bluelogo"></a>
             <a href="index.html"><img src="images/storlogo.png" alt="Stort logo, hvor der står CK Design" id="logo"></a>
-           <input class="menuknap" type="checkbox" id="menuknap"/>
-           <label class="menuikon" for="menuknap"> <span class="navikon"></span></label>
-           <ul class="menu">
-                <li> <a href="portfolio.html">Portfolio</a></li>
-                <li> <a href="ommig.html">Om mig</a></li>
-                <li> <a href="#">Kontakt </a></li>
-           </ul>
+            <input class="menuknap" type="checkbox" id="menuknap"/>
+            <label class="menuikon" for="menuknap"> <span class="navikon"></span></label>
+                <ul class="menu">
+                    <li> <a href="portfolio.html">Portfolio</a></li>
+                    <li> <a href="ommig.html">Om mig</a></li>
+                    <li> <a href="#">Kontakt </a></li>
+                </ul>
         </header>
+        
         <main class="container">
-            <section class="kontakttekst">
+            <div class="kontakttekst">
+            <section>
                 <h1> Sådan får du fat i mig </h1>
                 <p> Sidder du tilbage med ubesvarede spørgsmål, eller vil du gerne have fat i mig? Så kan du skrive en mail eller ringe på nedenstående. </p>
                 <p><b> Email <br> Ceciliekfknudsen@gmail.com</b></p>
                 <p><b> Telefon <br> +45 24 34 95 27</b></p>
-                <p>Jeg er tilgænglelig mandag - fredag mellem 9-16.</p>
+                <p>Jeg er tilgænglelig fra mandag til fredag mellem 9-16.</p>
                 <p> Du kan også udfylde formularen herunder og jeg vil vende tlbage til dig hurtigst muligt.</p>
-
             </section>
+            <img src="images/circle.png" alt="Cirkel med linjer" id="circle">
+        </div>
             <section class="kontaktformular">
-                <h2> Kontaktformular </h2>
-                <p> Udfyld felterne herunder</p>
                 <form>
+                    <h2> Kontaktformular </h2>
+                    <p> Udfyld felterne herunder</p>
+                    
                     <p>Navn</p>
-                    <input type="text" name="fuldenavn" placeholder="Dit navn">
+                        <input type="text" name="fuldenavn" placeholder="Dit navn">
+                    
                     <p> Telefonnummer</p>
-                    <input type="text" name="nummer" placeholder="Dit telefonnummer">
+                        <input type="text" name="nummer" placeholder="Dit telefonnummer">
+                    
                     <p> Email</p>
-                    <input type="text" name="email" placeholder="Din email">
+                        <input type="text" name="email" placeholder="Din email">
+                    
                     <p> Skriv din besked her </p>
-                    <input type="text" name="besked" id="besked" placeholder="Skriv din besked her">
+                        <input type="text" name="besked" id="besked" placeholder="Skriv din besked her">
+                    
                     <p> Hvordan foretrækker du jeg vender tilbage til dig?</p>
                         <select>
                             <option> Vælg</option>
                             <option> Opklad </option>
                             <option> Mail </option>
-                         </select>
-                    <p> Tryk herunder hvis den skal suse afsted til mig</p>
+                        </select>
+                   
+                    <p>Tryk herunder hvis den skal suse afsted til mig</p>
                     <input type="submit" id="sendbesked">
-                    </form>
+                </form>
             </section>
+            
             <section class="kontaktbund">
-            <h3> Du hører fra mig</h3>
+            <h3> Du hører fra mig </h3>
             <img src="images/vinkendehand.svg" alt="en pink hånd, der vinker" class="hand">
             </section>
+
         </main>
+       
         <footer>
             <h3> Let's keep in touch </h3>
-            <section class="bundlinje">
+            <div class="bundlinje">
                     <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-phone"></i>
                     <i class="fa-brands fa-linkedin"></i>
                     <i class="fa-brands fa-instagram"></i>
-            </section>
-            <section>
-
-            </section>
-            <section>
+            </div>
+            <div>
                     <img src="images/vandmaerke.svg" alt="Hvidt C og K Logo" id="vandmærke">
-            </section>
-
+            </div>
         </footer>
+
     </body>
 
 </html>

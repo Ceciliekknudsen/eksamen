@@ -1,19 +1,37 @@
+/* IMPORTEREDE SKRIFTER*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@900&display=swap');
 
-h1 {font-family: 'bebas neue', sans-serif;  font-size: 30px; color: rgb(19, 19, 216); margin: 20px; }
-h2 { font-family: 'bebas neue', sans-serif; font-size: 30px; color: white; text-transform: uppercase; margin: 20px;}
-h3 {font-family:'Fjalla One', sans-serif; font-size: 20px; margin:20px;}
-p {font-family: 'open sans'; font-size: 18px; margin: 20px;}
-a  {font-family: 'open sans';}
+/* STYLES FOR SKRIFT*/
+h1 {font-family: 'Roboto', sans-serif;  
+        font-size: 30px; 
+        color: rgb( 18, 18, 196); 
+        text-transform: uppercase; 
+        margin: 20px; 
+}
+h2 { font-family: 'Roboto', sans-serif; 
+        font-size: 30px;
+        color: white; 
+        text-transform: uppercase; 
+        margin: 20px;
+}
+h3 {font-family:'open sans'; 
+        font-size: 20px; 
+        margin:20px; 
+        font-weight: bold;
+}
+p {font-family: 'open sans'; 
+        font-size: 16px; 
+        margin: 20px; 
+}
+a  {font-family: 'open sans'; 
+        font-size: 16px; 
+        text-transform: uppercase; 
+        text-align: center;
+}
 
-
-body{ margin: 0%;
-width: 100%}
-
-/* Logo */
-#bluelogo {
-        display: block;
+/* LOGOER */
+#bluelogo {display: block;
         padding: 20px;
         float: left;
 }
@@ -21,17 +39,18 @@ width: 100%}
         padding: 20px;
         float: left;
 }
-/* menulinje */
-header { height: 90px; 
+
+/* HEADER */
+header { height: 95px; 
         width: 100%; 
         top:0;
-        box-shadow: 1px 0px 4px black; 
+        box-shadow: 1px 0px 4px rgb(46, 46, 46); 
         position: fixed;
         background-color: white;
 }
 
-.menu {
-        list-style:none; 
+/* BURGERMENU */
+.menu {list-style:none; 
         overflow: hidden;
         text-align: center;
         background-color: white;
@@ -39,262 +58,450 @@ header { height: 90px;
         max-height: 0%; 
         transition: max-hight .2s ease-out;
 }
-
-.menu a {
-        display:block;
+.menu a {display:block;
         padding: 20px;
         text-decoration: none;
-        color:black;
+        color: rgb(46, 46, 46); 
 }
-
-.menu a:hover {
-        text-decoration: underline rgb(212, 0, 255) 3px;
-        text-underline-offset: 7px;}
-
-.menuikon {
-        padding: 28px 20px;
+.menu a:hover {text-decoration: underline rgb(226, 26, 188) 3px;
+        text-underline-offset: 7px;
+}
+.menuikon {padding: 28px 20px;
         float: right;
-        margin: 20px;
+        margin: 20px; 
 }
-/* dette er for burger ikonet, man bruger psuedo til at rykke en span over og under */
-.menuikon .navikon { 
-        background-color: black;
+
+/* BURGERIKONET */
+.menuikon .navikon { background-color: rgb(46, 46, 46);
         display: block;
         height: 3px;
         width: 25px;
         position: relative;
         transition: background .2s ease-out;
 }
-
-.menuikon .navikon:before {
-        background-color: black;
+.menuikon .navikon:before {background-color: rgb(46, 46, 46);
         content: ""; 
         display: block;
         height: 100%; 
         width: 100%;
         position: absolute;
         top: 8px;
-        transition: all .2s ease-out;
+        transition: all .2s ease-out; 
 }
-
-header .menuikon .navikon::after{
-        background-color: black;
+header .menuikon .navikon::after{ background-color: rgb(46, 46, 46);
         content: ""; 
         display: block;
         height: 100%; 
         width: 100%;
         position: absolute;
         top: -8px;
-        transition: all .2s ease-out;
+        transition: all .2s ease-out; 
 }
-
 .menuknap {display: none;}
 
-/* Dette er for at lave et x, når vores burger menu er checked */
+/* ROTERE BURGERLINJER*/
 .menuknap:checked ~ .menu {
-        max-height: 240px;
-}
+        max-height: 240px; }
 .menuknap:checked ~ .menuikon .navikon {
-        background-color: transparent;
-}
+        background-color: transparent; }
 .menuknap:checked ~ .menuikon .navikon:before {
         transform: rotate(-45deg);
-        top:0px;
-}
+        top:0px; }
 .menuknap:checked ~ .menuikon .navikon:after {
         transform: rotate(45deg);
-        top:0px;
+        top:0px;}
+
+
+
+/* INDHOLD PÅ SIDERNE */
+        /* INDEX */
+body{ margin: 0%;
+        width: 100%;
 }
 
-/*Slut header - starter main*/
-
 main {margin-top:150px;}
-.velkommensektion {display: flex; 
-        flex-direction: column;
-        align-items:flex-start;
-        flex-wrap: nowrap; 
-        }
 
-/* Blå sektion - flere sider*/
+.velkommensektion {display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap; 
+        margin-bottom: 40px;
+}
+
+#lines {display:none;}
+#pinkdots { display: none;}
+
 .blueboks { width: 100%; 
         display: flex; 
-        flex-direction: column; 
-        align-items: flex-end;
-        background-color: rgb(19, 19, 216);
+        flex-direction: row; 
+        justify-content: space-between;
+        background-color: rgb(18, 18, 196);
         color: white;
         text-align: right;
 }
 
-/* bunden af startside */
-.bunden{ margin: 20px 20px 20px 20px;}
-
-/*Om mig knap*/
-.ommigknap {  width: 150px;
-        margin: 0px 0px 20px 20px;
-        padding: 15px;
-        background-color: white;
-        border: 5px solid orange;
-        color: orange; font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
+        /* INDEX BUND */
+.bunden { margin-top: 60px;}
+.indexkontakt {display: flex; 
+        flex-wrap: wrap; 
+        flex-direction: column;
+        justify-content: space-evenly; 
+        align-items: center; 
+        margin-bottom: 40px; 
 }
 
-.ommigknap:hover {background-color: orange;
-        color: white;}
+.sociale {text-align: center;}
 
-/*portfolio knap*/   
-.portfolioknap { width: 150px;
-        margin: 0px 20px 20px 20px;
-        padding: 15px;
-        background-color: white;
-        border: 5px solid orange;
-        color: orange; font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
+.some { display: flex; 
+        flex-direction: row; 
+        justify-content: center;
 }
-.portfolioknap:hover { 
-        background-color: orange;
-        color: white;
+.some i {font-size: 40px; 
+        color: rgb(226, 26, 188);
+        margin: 40px;
 }
 
-/* Kontakt mig knap */
-.kontaktknap {  width: 150px;
-        margin: 20px 0px 20px 20px;
-        padding: 15px;
-        background-color: white;
-        border: 5px solid orange;
-        color: orange; font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;}
-
-.kontaktknap:hover { 
-        background-color: orange;
-        color: white;
+        /* INDEX ANIMATION */
+#phone {font-size:50px; 
+        color: rgb(255, 137, 0);
+        animation: tele 2s infinite
+}
+#mail {font-size:50px; 
+        color: rgb(255, 137, 0);
+        animation: mail 2s infinite;
 }
 
-
-
-/* Om mig side */
-.ommig {display: flex; justify-content: flex-end;}
-.navnebillede {width: 80%;}
-.ommigbund { display: flex; flex-direction: column;}
-p b { color: rgb(181, 17, 218);}
-
-/* portfolio */
-.portfoliobund {display: flex; flex-direction: column; }
-/*Flexbok portfolio*/
-.container1 {display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;}
-
-.container2 {display: flex;
-         flex-direction: row;
-        flex-wrap: wrap;}
-
-.flexbox {width: 100%;
-box-shadow: 1px 1px 4px black;
-margin: 10px 0px;
-padding: 15px;
-flex-basis: 100%;}
-
-.boks-1 { display: flex; flex-direction: column;
-         background-color:rgb(19, 19, 216); color: white; text-align: right;
-} 
-.boks-1 img { width: 80%; align-self: center;}
-
-.boks-2{ min-height: 100px; display: flex; flex-direction: column;}
-.boks-2 img {width: 70%; margin: 0; align-self: center;}
-.boks-3{display:flex; flex-direction: column;
-        background-color: rgb(19, 19, 216); color: white; text-align:right;}
-.boks-3 img{width: 70%; align-self: center;}
-.boks-4{display:flex; flex-direction: column}
-.boks-4 img {width: 70%; align-self: center;}
-
-.boks-5 {min-height:100px;background-color: rgb(19, 19, 216); color: white; text-align: right;}
-.boks-6{min-height: 100px;}
-
-
-/* Kontakt mig */
-.container { display: flex; flex-direction: column;
-}
-
-.kontakttekst { display: flex; flex-direction: column; padding: 20px;
-}
-.kontakttekst p b {margin-left: 40px; display: block;}
-.kontaktformular { background-color: rgb(19, 19, 216); width: 100%; color: white;}
-.kontaktbund {text-align: center;}
-
-/*animation til vinkende hånd*/
-.hand {height: 80px; align-self: center; margin-bottom: 20px; animation: hand 2.5s infinite; animation-delay: 3s;}
-@keyframes hand { 
+@keyframes tele { 
         0%{transform: rotate(0.0deg)} 
-        10% {transform: (14.0deg);}
+        10% {transform: rotate(14deg);}
         20% {transform: rotate(-8deg);}
         30%{transform: rotate(14deg)}
         40%{transform: rotate(-4deg)}
         50%{transform: rotate(10deg)}
         60%{transform: rotate(0deg)}
+        100%{transform: rotate(0deg)} 
+}
+@keyframes mail { 
+        0%{transform: rotate(0.0deg)} 
+        10% {transform: rotate(14deg);}
+        20% {transform: rotate(-8deg);}
+        30%{transform: rotate(14deg)}
+        40%{transform: rotate(-4deg)}
+        50%{transform: rotate(10deg)}
+        100%{transform: rotate(0deg)}   
+}
+        
+        /* SE KNAPPER LÆNGERE NEDE */
+
+/* PORTFOLIO */
+.topportfolio {display:flex; 
+        align-items: center; 
+        margin-bottom: 20px;
+}
+
+#star {display:none;}
+
+.portfoliobund {display: flex; 
+        flex-direction: column; 
+        align-items: center;
+}
+
+/* PORTFOLIO BOKSE */
+.container1 {display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+
+.container2 {display: flex;
+         flex-direction: row;
+        flex-wrap: wrap;
+}
+
+.flexbox {width: 100%;
+        box-shadow: 1px 1px 4px rgb(46, 46, 46);
+        margin: 10px 0px;
+        padding: 15px;
+        flex-basis: 100%;
+}
+
+.boks-blue { display: flex; 
+        flex-direction: column;
+        background-color:rgb(18, 18, 196); 
+        color: white; 
+        align-items: center;
+} 
+
+.boks-blue img { width:80%;}
+
+.boks-hvid{ min-height: 100px; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+}
+.boks-hvid img {width: 80%;}
+
+
+
+/* OM MIG SIDE*/
+.ommig {display: flex; 
+        flex-wrap: wrap; 
+        justify-content: flex-end; 
+        align-items: center;
+}
+
+#navnebillede {width: 80%;}
+#mig, #navn {display: none;}
+
+.ommigbund { display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        margin: 20px 0px;
+}
+
+.blue {display: flex; 
+        flex-direction: column;
+        background-color:rgb(18, 18, 196); 
+        color: white;
+        text-align: right;
+} 
+section { padding: 40px 0px;}
+
+p b { color: rgb(226, 26, 188);}
+
+
+/* KONTAKT MIG */
+.container { display: flex; 
+        flex-direction: column;
+}
+.kontakttekst { display: flex; 
+        flex-direction: row;
+
+}
+
+/* KONTAKT FORMULAR */
+.kontaktformular { display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap; 
+        background-color: rgb(19, 19, 216); 
+        width: 100%; 
+        color: white;
+}
+#circle { display: none;}
+
+form { display: flex; 
+        flex-direction: column; 
+        flex-wrap: nowrap; 
+        align-items: flex-start; 
+}
+input { width:300px; 
+        padding: 20px 10px; 
+        border: none; 
+        margin-left: 20px;
+}
+select { width: 300px; 
+        padding: 10px; 
+        border:none; 
+        margin-left: 20px;
+}
+#besked { height: 100px; 
+        width: 300px;
+}
+#sendbesked {width: 100px; 
+        color: rgb(226, 26, 188); 
+        border-radius: 5% 5% ; 
+        margin: 20px;
+}
+#sendbesked:hover { background-color: rgb(255, 137, 0);
+        color: white;
+}
+
+/* ANIMATION VINKENDE HAND*/
+.kontaktbund {text-align: center;}
+.hand {height: 80px; 
+        align-self: center; 
+        margin-bottom: 20px;
+        animation: hand 2.5s infinite;
+}
+@keyframes hand { 
+        0%{transform: rotate(0deg)} 
+        10% {transform: rotate(14deg);}
+        20% {transform: rotate(-8deg);}
+        30%{transform: rotate(14deg)}
+        40%{transform: rotate(-4deg)}
+        50%{transform: rotate(10deg)}
         100%{transform: rotate(0deg)}
 }
 
 
-/*kontakt formular */
-form { display: flex; flex-direction: column; flex-wrap: nowrap; align-items: flex-start; }
-input { width:300px; padding: 20px 10px; border: none; margin-left: 20px;}
-select { width: 300px; padding: 10px; border:none; margin-left: 20px;}
-#besked { height: 100px; width: 300px;}
-#sendbesked {width: 100px; color:blueviolet; border-radius: 10% 10% ; margin: 20px;}
-
-#sendbesked:hover { background-color: orange;}
-
-
-/*footer*/
+/* FOOTER */
 
 footer {
         width: 100%; 
-        border-top: 1px solid black; 
+        border-top: 1px solid rgb(46, 46, 46); 
         background-color: white;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin:0;
 }
 
 #vandmærke {display: none;}
 footer p {display: none;}
+.bundlinje { display: flex; 
+        justify-content: space-evenly;
+        margin: 40px 0px;
+}
+i { font-size:23px; 
+        color: rgb(226, 26, 188) 
+}
 
-.bundlinje { display: flex; justify-content: space-evenly; margin: 40px 0px;}
 
-i { font-size:23px; color: orange; }
+/* KNAPPER */
+/*Om mig knap*/
+.ommigknap {  display: inline-block;
+        width: 150px;
+        margin: 20px;
+        padding: 15px;
+        background-color: white;
+        border: 3px solid rgb(255, 137, 0);
+        color: rgb(255, 137, 0); 
+        font-weight: bold;
+        text-decoration: none;
+}
 
-/*media quary*/
-/* header */
+.ommigknap:hover {background-color: rgb(255, 137, 0);
+        color: white;}
+
+/*portfolio knap*/   
+.portfolioknap { width: 150px;
+        display: inline-block;
+        margin: 20px;
+        padding: 15px;
+        background-color: white;
+        border: 3px solid rgb(255, 137, 0);
+        color: rgb(255, 137, 0); 
+        font-weight: bold;
+        text-decoration: none
+}
+.portfolioknap:hover { 
+        background-color: rgb(255, 137, 0);
+        color: white;
+}
+
+/* Kontakt mig knap */
+.kontaktknap { display: inline-block;
+        width: 150px;
+        margin: 20px;
+        padding: 15px;
+        background-color: white;
+        border: 3px solid rgb(255, 137, 0);
+        color: rgb(255, 137, 0); 
+        font-weight: bold;
+        text-decoration: none}
+.kontaktknap:hover { 
+        background-color: rgb(255, 137, 0);
+        color: white;
+}
+
+
+
+/* MEDIA QUERIES*/
+
+/* SKRIFTTYPER */
+@media only screen and (min-width:600px){
+        h1 {font-size: 40px; margin: 20px 60px; }
+        h2 { font-size: 40px; margin: 20px 60px;}
+        h3 {font-size: 25px; margin:20px 60px;}
+        p {font-size: 18px; margin: 20px 60px;}
+        a  {font-size: 18px;} 
+}
+
+        
+/* HEADER OG MENU */
 @media only screen and (min-width: 800px) {
-        header li {float: left; margin-top: 10px;}
-        header li a { padding: 0px;} 
-        .menu { clear: none; float: right; max-height: none}
+        header li {float: left; 
+                margin-top: 10px;}
+        header li a {padding: 0px;} 
+        .menu {clear: none; 
+                float: right; 
+                max-height: none}
         header .menuikon { display: none;}
 }
-/*logoer*/
-@media only screen and (min-width: 600px) { #bluelogo{display:none}
-#logo{display:block;}}
- /*Media for portfolio*/
-@media only screen and (min-width:800px) { .container1, .container2 {flex-wrap: nowrap;} .flexbox { text-align:center;}
+/* LOGOER */
+@media only screen and (min-width: 600px) { 
+        #bluelogo{display:none}
+        #logo{display:block;} }
 
+/* INDEX SIDE */ 
+ @media only screen and (min-width: 800px) {
+        #lines{ display:block; 
+                width: 239px; 
+                margin-bottom: 20px;}
+        #pinkdots{ display: block;
+                width: 400px; 
+                margin: 40px;} 
+        .indexkontakt {display: flex; 
+                flex-direction: row; 
+                justify-content: space-evenly; 
+                align-items: center; 
+                margin-bottom: 40px;}
+        #mail, #phone {font-size: 80px;}
 }
-/* Footer*/
-@media only screen and (min-width: 800px) { 
-        .bundlinje {display: flex; flex-direction: row;}
-        #vandmærke{ display:inline-block; align-self: center; width: 60px;}
-        i {font-size: 40px;} }
-/*kontakt*/
+
+ /* PORTFOLIO*/
+@media only screen and (min-width:800px) { 
+        #star {display: block; 
+                margin-right: 60px;}
+        .container1, .container2 {flex-wrap: nowrap;} 
+        .flexbox {text-align:center;}
+}
+
+/* OM MIG */
+@media only screen and (min-width: 800px) {
+        #navnebillede {display: none}
+        #mig {display: block; 
+                width: 600px;}
+}
+
+/* SPECIEL MEDIA TIL OM MIG, 
+PGA BILLEDE */
+
+@media only screen and (min-width: 1322px) {
+        #navn {display: block; 
+                max-height: 100px; 
+                margin-left: 60px;}
+        .ommig {justify-content: space-between;}
+}
+
+/*KONTAKT*/
 @media only screen and (min-width:600px) {
-        input {width: 500px;}
-        select {width: 500px;}
+        input {width: 500px; margin-left: 60px;}
+        select {width: 500px; margin-left: 60px;}
         #besked {width: 500px;}
-        #sendbesked { width:110px; padding: 10px;}
+        #sendbesked { width:110px; 
+                padding: 10px; 
+                margin-left: 60px;}
         .hand {height: 120px;}
 }
+@media only screen and (min-width:1000px) {
+#circle {display: block;
+        height: 200px;
+        align-self: center;
+        margin-right: 80px;}
+}
+
+/* FOOTER*/
+@media only screen and (min-width: 800px) { 
+        .bundlinje {display: flex; 
+                flex-direction: row;}
+        #vandmærke{ display:inline-block; 
+                align-self: center; 
+                width: 60px;}
+        i {font-size: 40px;} 
+}
+
+/* KNAPPER */
+@media only screen and (min-width: 600px) { 
+        .ommigknap, .portfolioknap, .kontaktknap {margin: 60px;}
+}
+
