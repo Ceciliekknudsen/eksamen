@@ -466,6 +466,7 @@ i { font-size:23px;
                 margin-right: 60px;}
         .container1, .container2 {flex-wrap: nowrap;} 
         .flexbox {text-align:center;}
+        p {text-align: left;}
 }
 
 /* OM MIG */
