@@ -1,6 +1,6 @@
 /* IMPORTEREDE SKRIFTER*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Roboto:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* STYLES FOR SKRIFT*/
 h1 {font-family: 'Roboto', sans-serif;  
@@ -15,16 +15,16 @@ h2 { font-family: 'Roboto', sans-serif;
         text-transform: uppercase; 
         margin: 20px;
 }
-h3 {font-family:'open sans'; 
+h3 {font-family:'open sans', sans-serif; 
         font-size: 20px; 
         margin:20px; 
         font-weight: bold;
 }
-p {font-family: 'open sans'; 
+p {font-family: 'open sans', sans-serif; 
         font-size: 16px; 
         margin: 20px; 
 }
-a  {font-family: 'open sans'; 
+a  {font-family: 'open sans', sans-serif; 
         font-size: 16px; 
         text-transform: uppercase; 
         text-align: center;
