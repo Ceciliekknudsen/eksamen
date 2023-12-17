@@ -458,15 +458,17 @@ i { font-size:23px;
                 align-items: center; 
                 margin-bottom: 40px;}
         #mail, #phone {font-size: 80px;}
+        .blueboks p {text-align: right;}
 }
 
  /* PORTFOLIO*/
-@media only screen and (min-width:800px) { 
+@media only screen and (min-width:1000px) { 
         #star {display: block; 
                 margin-right: 60px;}
         .container1, .container2 {flex-wrap: nowrap;} 
         .flexbox {text-align:center;}
-        p {text-align: left;}
+        .container1 p {text-align: left; margin: 20px 10px 40px 10px;}
+        .container2 p {text-align: left; margin: 20px 10px 40px 10px;}
 }
 
 /* OM MIG */
@@ -477,7 +479,8 @@ i { font-size:23px;
         #navn {display: block; 
                 max-height: 100px; 
                 margin-left: 60px;}
-        .ommig {justify-content: space-between; }
+        .ommig {justify-content: space-between;}
+        .blue {text-align: right;}
 }
 
 /*KONTAKT*/
